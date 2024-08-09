@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* SEÇÃO #01 - RAÍZ */
+:root {
+    --maincolor: rgba(211, 174, 124, 1);
+    --black: rgba(19, 19, 26, 1);
+    --bg: rgba(20, 22, 49, 0.8);
+    --bgitem: rgba(132, 0, 255, 1);
+    --mainborder: 2px solid rgba(255, 255, 255, 0.2);
+    --font-border: 2px solid rgba(211, 174, 124, 1);
+    --hilightborder: 2px solid rgba(240, 80, 40, 1);
+    --font-maincolor: rgba(255, 255, 255, 1);
+    --coment-bg: rgba(145, 215, 255, 0.2);
+    font-size: 10px;
+    font-family: "Poppins", sans-serif;
+}
+
+/* SEÇÃO #02 - FUNDAÇÃO */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: 0.2s linear;
+    scroll-snap-type: y mandatory;
+}
+
+/* SEÇÃO #03 - ESQUELETO */
+body {
+    background-color: var(--bg);
+    float: left;
+    width: 100vw;
+}
+
+
+/* SEÇÃO #03 - HEADER */
+
+
+/* SEÇÃO #04 - ESTRUTURA PRINCIPAL */
+
+
+/* >>>>>> ITENS GERAIS <<<<<< */
+
+.cardbox01 {
+    margin: auto 5px;
+}
+
+.cardbox02 {
+    margin: auto 5px;
+}
+
+.cardbox03 {
+    margin: auto 5px;
+}
+
+.cardbox04 {
+    margin: auto 5px;
+}
+
+.card {
+    background-color: var(--bgitem);
+    border-radius: 10px;
+    padding: 5px;
+    height: 90vh;
+    width: 100%;
+}
+
+.cardhead {
+    height: 150px;
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    padding: 5px 5px 10px 5px;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+
+.cardfoot {
+    height: 400px;
+    border-radius: 10px;
+    border: var(--hilightborder);
+    justify-content: space-around;
+    display: flex;
+}
+
+
+.extitle {
+    border: var(--mainborder);
+    background-color: var(--bg);
+    border-radius: 10px;
+    margin-top: 2px;
+    margin-bottom: 5px;
+    height: 40px;
+    width: 85px;
+}
+
+.container {
+    border: var(--mainborder);
+    background-color: var(--bg);
+    border-radius: 10px;
+    padding: 5px;
+    height: 150px;
+    width: 85px;
+}
+
+.item {
+    border: var(--mainborder);
+    border-radius: 3px;
+    background-color: var(--bgitem);
+    height: 25px;
+    width: 25px;
+    margin: 3px;
+}
+
+
+
+/* >>>>>> PÁGINA 1 <<<<<< */
+
+.pg01 {
+    scroll-snap-align: start;
+    padding: 15px;
+    height: 100vh;
+    float: left;
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.pg01 .container {
+    flex-wrap: nowrap;
+}
+
+.pg01 .cardbox01 .ex02 .container {
+    display: flex;
+}
+
+.pg01 .cardbox02 .ex01 .container {
+    display: flex;
+    flex-direction: row;
+}
+
+.pg01 .cardbox02 .ex02 .container {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.pg01 .cardbox03 .ex01 .container {
+    display: flex;
+    flex-direction: column;
+}
+
+.pg01 .cardbox03 .ex02 .container {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+
+
+/* >>>>>> PÁGINA 2 <<<<<< */
+
+.pg02 {
+    scroll-snap-align: start;
+    height: 100vh;
+    float: left;
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.pg02 .container {
+    display: flex;
+}
+
+.pg02 .cardbox01 .ex01 .container {
+    flex-flow: row nowrap;
+}
+
+/* >>>>>> PÁGINA 3 <<<<<< */
+
+
+/* >>>>>> PÁGINA 4 <<<<<< */
+
+
+/* SEÇÃO #05 - ACESSÓRIOS (LOGO | ÍCONES | TEXTOS) */
+
+h1 {
+    background: rgba(255, 255, 255, 0.1);
+    color: var(--font-maincolor);
+    font-style: normal;
+    font-size: 28px;
+    font-weight: 700;
+    text-align: center;
+    border-radius: 10px;
+}
+
+h2 {
+    color: var(--font-maincolor);
+    font-style: normal;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+h3 {
+    color: var(--font-maincolor);
+    font-style: normal;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+p {
+    color: var(--font-maincolor);
+    font-style: normal;
+    font-size: 12px;
+    font-weight: 350;
+    text-transform: none;
+    text-decoration: none;
+}
+
+/* SEÇÃO #06 - EFEITOS */
